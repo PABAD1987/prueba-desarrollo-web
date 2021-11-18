@@ -1,0 +1,28 @@
+/* Mapas */
+/* Me deja guardar distintos tipos de variables */
+
+$standard: (
+    color-santard: #f4f4f4,
+    bg-standard: red,
+
+    /* Border */
+    border-standard: 4px solid red,
+
+    /* Anchos */
+    width-standad: 80%,
+);
+
+$premium: (
+    color-premium: #000,
+    bg-premium: gold,
+);
+
+/* Como lo uso */
+
+.standard {
+    background-color: map-get($standard, bg-standard);
+}
+
+.premium {
+    color: map-get($premium, color-premium);
+}

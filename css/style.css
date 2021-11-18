@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* Anidamiento o Nesting */
+/* En vez de hacer cascada como en css ponemos la etiqueta, la clase o el id y ponemos los componentes adentreo */
+/* Cuando lo guardo me lo traduce a CSS al estilo "normal" como cascada */
+/* Podemos escribir también pseudo clases, pseudo elementos y mediaqueries de una sola vez dentro de todo un espacio */
+/* Debemos importar el archivo parcial */
+/* Podemos crear Variables - Es una palabra reservada donde podemos poner un valor cualquiera */
+/* Puedo crear listas para usar varias variables */
+.button-ok {
+  color: red;
+}
+
+.button-not {
+  color: nth yellow, red, green, blue, 4;
+}
+
+/* Lo uso acá solo a modo de ejemplo, lo debería poner en el archivo que corresponda */
+.border-menu {
+  border: 1px solid darken #900, 20%;
+}
+
+.bg-fotos {
+  background-color: #090;
+}
+.bg-fotos:hover {
+  background-color: lighten #090, 20%;
+}
+
+.textos {
+  color: rgba #900, 0.4;
+}
+
+.seccion-loca {
+  background-color: mix #090, #900;
+}
+
+/* Operadores */
+.seccion-img {
+  width: 50%;
+}
+
+.img-2 {
+  width: 100%;
+}
+
+.img-3 {
+  width: 60%;
+}
+
+/* Archivo Parcial - Sirve para ir trabajando por parte y no tener que buscar en todo el código */
+/* Podemos crear Variables - Es una palabra reservada donde podemos poner un valor cualquiera */
+header {
+  background-color: black;
+}
+header nav {
+  padding: 20px;
+}
+header nav ul li {
+  list-style-type: circle;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 968px) {
+  header {
+    background-color: cadetblue;
+  }
+}
+
+/* Mapas */
+/* Me deja guardar distintos tipos de variables */
+/* Como lo uso */
+.standard {
+  background-color: red;
+}
+
+.premium {
+  color: #000;
+}
+
+/* Extensiones */
+/* Es una bolsita de propiedades para reutilizarlo */
+/* Placeholder % */
+.accept, .error {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.accept, .error {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  background-color: red;
+}
+
+.accept {
+  background-color: green;
+}
+
+/* Son parecidos a Extends */
+/* La diferencia es que Mixin me deja agregar una variable o un parametro vacia que decido en un futuro que valor va a tener */
+.animaciones {
+  -webkit-transform: scale(2);
+  -o-transform: scale(2);
+  -moz-transform: scale(2);
+  transform: scale(2);
+}
+
+.animaciones-dos {
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.animaciones-tres {
+  -webkit-transform: translate(200px);
+  -o-transform: translate(200px);
+  -moz-transform: translate(200px);
+  transform: translate(200px);
+}
+
+.varios {
+  width: 100%;
+  padding: 22px;
+  display: flex;
+}
+
+.varios-dos {
+  width: 50%;
+  padding: 18px;
+  display: block;
+}
+
+.turbio {
+  border-radius: 4px;
+  border: 1px;
+  width: 100%;
+  padding: 40px;
+}
+
+/* No es habitual el uso en todo proyecto */
+.bg-condiciones {
+  background-color: orange;
+  border: 1px solid black;
+}
+
+.bg-condiciones-dos {
+  background-color: blue;
+  border: 2px dotted gray;
+}
+
+/*# sourceMappingURL=style.css.map */

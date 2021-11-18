@@ -1,0 +1,15 @@
+/* Puedo crear listas para usar varias variables */
+
+$colores:
+yellow, 
+red,
+green,
+blue;
+
+.button-ok {
+    color: nth($colores, 2)
+}
+
+.button-not {
+    color: nth ($colores, 4)
+}

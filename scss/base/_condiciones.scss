@@ -1,0 +1,24 @@
+/* No es habitual el uso en todo proyecto */
+
+// if (tu viejo === es zapatero) {
+//     zarpale la lata
+// } else {
+//     ranchamo en la esquina
+// }
+
+@mixin condicion ($colores) {
+    background-color: $colores;
+    @if $colores == orange {
+        border: 1px solid black;        
+    } @else {
+        border: 2px dotted gray;
+    }
+}
+
+.bg-condiciones {
+    @include condicion(orange)
+}
+
+.bg-condiciones-dos {
+    @include condicion(blue)
+}

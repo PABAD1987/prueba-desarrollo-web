@@ -1,0 +1,46 @@
+/* Son parecidos a Extends */
+/* La diferencia es que Mixin me deja agregar una variable o un parametro vacia que decido en un futuro que valor va a tener */
+
+@mixin prefijos ($propiedad) {
+    -webkit-transform: $propiedad;
+    -o-transform: $propiedad;
+    -moz-transform: $propiedad;
+    transform: $propiedad;
+}
+
+.animaciones {
+    @include prefijos(scale(2));
+}
+
+.animaciones-dos {
+    @include prefijos(rotate(90deg));
+}
+
+.animaciones-tres {
+    @include prefijos(translate(200px))
+}
+
+@mixin varios-parametros ($ancho, $padding, $display) {
+    width: $ancho;
+    padding: $padding;
+    display: $display;
+}
+
+.varios {
+    @include varios-parametros(100%, 22px, flex)
+}
+
+.varios-dos {
+    @include varios-parametros(50%, 18px, block)
+}
+
+@mixin KomoLoZupo ($border, $radius) {
+    border-radius: $radius;
+    border: $border;
+    width: 100%;
+    padding: 40px;
+}
+
+.turbio {
+    @include KomoLoZupo(1px, 4px)
+}

@@ -1,0 +1,24 @@
+/* Archivo Parcial - Sirve para ir trabajando por parte y no tener que buscar en todo el código */
+@import "../base/variables";
+
+header {
+    background-color: $bg-general;
+    nav {
+        padding: 20px;
+        ul {
+            li {
+                list-style-type: circle;
+                a {
+                    text-decoration: none;
+                    &:hover {
+                    text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 968px) {
+        background-color: cadetblue;
+    }
+
+}

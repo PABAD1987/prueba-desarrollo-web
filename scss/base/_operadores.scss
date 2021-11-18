@@ -1,0 +1,15 @@
+/* Operadores */
+
+$ancho-principal-img: 50%;
+
+.seccion-img {
+    width: $ancho-principal-img;
+}
+
+.img-2 {
+    width: $ancho-principal-img *2;
+}
+
+.img-3 {
+    width: $ancho-principal-img +10%;
+}
